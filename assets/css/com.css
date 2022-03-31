@@ -33,6 +33,7 @@ body {
   margin: auto;
   position: relative;
   color: #4267b2;
+  z-index: -1
 }
 
 .fb-comments-header {
