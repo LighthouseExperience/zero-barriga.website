@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Protocolo Zero Barriga</title>
+
+<link rel="shortcut icon" href="../images/fav.ico" />
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+<link href="../css/style.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+
+<link href="../css/responsive.css" rel="stylesheet" />
+
+
+<!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1182045975885013');
+      fbq('track', 'PageView');
+      fbq('track', 'Quiz-pzb');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1182045975885013&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+
+<section class="bg">
+<div class="container col-md-12">
+<div class="title">
+<img class="img-fluid mb-4" src="../images/ultrasecreto.svg" />
+<p>Responda as 3 perguntas para visualizar o conteúdo</p>
+</div>
+<div class="spl-12-offers spl-1-offers container1" style="margin: 0 auto">
+<div class="alerta">
+<div class="black">
+<div id="primeira">
+<div class="question">
+<h2>Pergunta 1</h2>
+<p>Você realmente quer descobrir esse segredo?</p>
+</div>
+<div class="answer">
+<button class="a-btn" onclick="second()">SIM</button>
+<button class="a-btn" onclick="second()">NÃO</button>
+</div>
+</div>
+<div id="second" class="hide">
+<div class="question">
+<h2>Pergunta 2</h2>
+<p>Você promete não revelar para ninguém?</p>
+</div>
+<div class="answer">
+<button class="a-btn" onclick="third()">SIM</button>
+<button class="a-btn" onclick="third()">NÃO</button>
+</div>
+</div>
+<div id="third" class="hide">
+<div class="question">
+<h2>Pergunta 3</h2>
+<p>
+O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver
+até o fim?
+</p>
+</div>
+<div class="answer">
+<button class="a-btn" onclick="redirect()">SIM</button>
+<button class="a-btn" onclick="redirect()">NÃO</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="site-width" style="padding: 10px; color: #414141; text-align: center">
+<p>
+© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma
+marca comercial da Facebook, Inc.
+</p>
+</div>
+</section>
+<script>
+      function second() {
+        document.getElementById("primeira").classList.add("hide");
+        document.getElementById("second").classList.remove("hide");
+      }
+      function third() {
+        document.getElementById("second").classList.add("hide");
+        document.getElementById("third").classList.remove("hide");
+      }
+      function redirect() {
+        location.href = "../";
+      }
+    </script>
+</body>
+</html>
